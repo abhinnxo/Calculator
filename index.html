@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <!-- Inline Styling -->
+        <h1 style="color: whitesmoke; text-align: center; margin-bottom: 5px">
+          Calculator
+        </h1>
+        <!-- row 1 -->
+        <div>
+          <input
+            type="text"
+            class="result"
+            id="result"
+            value=""
+            placeholder="Result"
+          />
+          <input type="button" value="C" onclick="clearScreen()" id="clear" />
+        </div>
+        <!-- row 2 -->
+        <div>
+          <input type="button" value="1" onclick="showOnScreen(1)" />
+          <input type="button" value="2" onclick="showOnScreen(2)" />
+          <input type="button" value="3" onclick="showOnScreen(3)" />
+          <input type="button" value="+" onclick="showOnScreen('+')" />
+        </div>
+        <!-- row 3 -->
+        <div>
+          <input type="button" value="4" onclick="showOnScreen(4)" />
+          <input type="button" value="5" onclick="showOnScreen(5)" />
+          <input type="button" value="6" onclick="showOnScreen(6)" />
+          <input type="button" value="-" onclick="showOnScreen('-')" />
+        </div>
+        <!-- row 4 -->
+        <div>
+          <input type="button" value="7" onclick="showOnScreen(7)" />
+          <input type="button" value="8" onclick="showOnScreen(8)" />
+          <input type="button" value="9" onclick="showOnScreen(9)" />
+          <input type="button" value="*" onclick="showOnScreen('*')" />
+        </div>
+        <!-- row 5 -->
+        <div>
+          <input
+            type="button"
+            value="/"
+            id="four"
+            onclick="showOnScreen('/')"
+          />
+          <input type="button" value="0" id="five" onclick="showOnScreen(0)" />
+          <input type="button" value="." id="six" onclick="showOnScreen('.')" />
+          <input
+            type="button"
+            value="="
+            id="equals"
+            onclick="showOnScreen('=')"
+          />
+        </div>
+        <!-- end of container -->
+      </div>
+      <!-- end of wrapper -->
+    </div>
+
+    <!-- Adding script -->
+    <script src="script.js"></script>
+  </body>
+</html>
